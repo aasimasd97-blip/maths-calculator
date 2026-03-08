@@ -62,7 +62,7 @@ display.value=result;
 
 const username = localStorage.getItem("username");
 
-await fetch("http://localhost:5000/calculate",{
+await fetch("https://maths-calculator-n1kw.onrender.com/calculate",{
 
 method:"POST",
 
@@ -86,7 +86,7 @@ loadHistory();
 
 async function loadHistory(){
 
-const res = await fetch("http://localhost:5000/history");
+const res = await fetch("https://maths-calculator-n1kw.onrender.com/history");
 
 const data = await res.json();
 
